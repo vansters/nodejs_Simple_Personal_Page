@@ -7,7 +7,8 @@
 1. [Technologies](#tech)
 1. [Running](#run)
 1. [Tips](#tips)
-1. [Credit & License](#credit)
+1. [Credit](#credit)
+1. [License](#license)
 
 ## <a name='intro'>Introduction</a>
 
@@ -54,3 +55,9 @@ node app
 
 
 ## <a name='credit'>Credit</a>
+
+**Author: Mario Andrade** [@TheVansters](https://twitter.com/TheVansters)
+
+## <a name='license'>License</a>
+
+**Public Domain**
