@@ -28,19 +28,26 @@ This is a simple project for develop a personal page and blog. The finality this
 2. Install [MongoDB](http://www.mongodb.org/downloads).
 3. Init MongoDB & Change default values in:
 ```
-$ cd <path to nodeJs_Simple_Page directory>/application/config/config_db.js
+<path to nodeJs_Simple_Page directory>/application/config/config_db.js
 ```
 4. Install dependencies using the node package manger (npm).
 ```
-$ sudo npm install
+npm install
 ```
 5. Start the Application demo server:
 ```
-$ node app
+node app
 ```
-6. Visit [http://localhost:5000](http://localhost:3000) in a web browser.
+6. Visit [http://localhost:5000](http://localhost:5000) in a web browser.
 	
 
 ## <a name='tips'>Tips</a>
+
+- **If you want the stylus automatically compiles**
+	+ Add Stylus in `package.json`
+	+ Uncomment the line **32** in `app.js`
+	```javascript
+	app.use(require('stylus').middleware({ src: __dirname + '/application/public' }));	
+
 
 ## <a name='credit'>Credit</a>
