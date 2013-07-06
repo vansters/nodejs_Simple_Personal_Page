@@ -46,8 +46,8 @@ node app
 - **If you want the stylus automatically compiles**
 	+ Add Stylus in `package.json`
 	+ Uncomment the line **32** in `app.js`
-	```javascript
-	app.use(require('stylus').middleware({ src: __dirname + '/application/public' }));	
+```javascript
+app.use(require('stylus').middleware({ src: __dirname + '/application/public' }));	
 
 
 ## <a name='credit'>Credit</a>
