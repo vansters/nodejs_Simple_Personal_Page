@@ -6,7 +6,7 @@ var MongoDB  = require('mongodb').Db
 var dbDev  = {
 	dbPort: 27017,
 	dbHost: 'localhost',
-	dbName: 'vantersblog'
+	dbName: 'dbName'
 }
 
 // Establishing Connection

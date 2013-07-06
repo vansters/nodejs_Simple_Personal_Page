@@ -21,6 +21,8 @@ This is a simple project for develop a personal page and blog. The finality this
 - [MongoDB](http://www.mongodb.org/) - A scalable, high-performance, open source NoSQL database.
 - [Jade](http://jade-lang.com/) - High performance template engine for NodeJs.
 - [Stylus](http://learnboost.github.com/stylus/) - Expressive, dynamic, robust CSS for NodeJs.
+- [Passport](http://passportjs.org/) - Simple, unobtrusive authentication for NodeJs.
+- [Bootstrap](http://twitter.github.io/bootstrap/) - Sleek, intuitive, and powerful front-end framework for faster and easier web development.
 
 ## <a name='run'>Running</a>
 **With nodeJs and MongoDB Server**
@@ -41,7 +43,6 @@ node app
 ```
 6. Visit [http://localhost:5000](http://localhost:5000) in a web browser.
 	
-
 ## <a name='tips'>Tips</a>
 
 - **If you want the stylus automatically compiles**
@@ -52,7 +53,6 @@ node app
 - **If you want compress css styles use this command**
 	+ Stylus Compress: `stylus -c index_page.styl` intro: 
 	+ `<path to nodeJs_Simple_Page directory>/application/public/stylesheets/`
-
 
 ## <a name='credit'>Credit</a>
 

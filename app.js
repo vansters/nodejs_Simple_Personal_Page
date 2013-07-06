@@ -1,9 +1,9 @@
 /**
-		***************************************
-		*	Author: @TheVanters (Mario Andrade) *
-		*	Date:  June - 2013									*
-		* Repository: ???                     *
-		***************************************
+****************************************************************************
+*	Author: @TheVanters (Mario Andrade) 																		 *
+*	Date:  June - 2013																											 *
+* Repository: https://github.com/vansters/nodejs_Simple_Personal_Page.git  *
+****************************************************************************
 **/
 
 var express = require('express'),
