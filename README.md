@@ -26,23 +26,19 @@ This is a simple project for develop a personal page and blog. The finality this
 	
 1. Install [node.js](http://nodejs.org/#download).
 2. Install [MongoDB](http://www.mongodb.org/downloads).
-3. Start the MongoDB server from a terminal window:
+3. Init MongoDB & Change default values in:
 ```
-$ mongod
-```
-4. Change the working directory to the project root:
-```
-$ cd <path to todosmvc directory>/labs/architecture-examples/backbone_node_mongo/
+$ cd <path to nodeJs_Simple_Page directory>/application/config/config_db.js
 ```
 4. Install dependencies using the node package manger (npm).
 ```
-$ sudo npm link
+$ sudo npm install
 ```
-5. Start the Todos demo server from a different terminal window:
+5. Start the Application demo server:
 ```
 $ node app
 ```
-6. Visit [http://localhost:3000](http://localhost:3000) in a web browser.
+6. Visit [http://localhost:5000](http://localhost:3000) in a web browser.
 	
 
 ## <a name='tips'>Tips</a>
