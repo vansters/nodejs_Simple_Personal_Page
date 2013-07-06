@@ -48,5 +48,9 @@ node app
 	+ Uncomment the line **32** in `app.js`
 	+ `app.use(require('stylus').middleware({ src: __dirname + '/application/public' }));`
 
+- **If you want compress css styles use this command**
+	+ Stylus Compress: `stylus -c index_page.styl` intro: 
+	+ `<path to nodeJs_Simple_Page directory>/application/public/stylesheets/`
+
 
 ## <a name='credit'>Credit</a>
