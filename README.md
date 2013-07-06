@@ -48,7 +48,7 @@ node app
 	+ Uncomment the line **32** in `app.js`
 
 	+ ```javascript
-	app.use(require('stylus').middleware({ src: __dirname + '/application/public' }));	
+		app.use(require('stylus').middleware({ src: __dirname + '/application/public' }));	
 
 
 ## <a name='credit'>Credit</a>
