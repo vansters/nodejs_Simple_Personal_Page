@@ -1,0 +1,41 @@
+!!!5
+html
+  head(lang='en')
+    meta(charset='utf-8')
+    title VanstersBlog|AdminPanel
+    meta(name='viewport', content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/stylesheets/bootstrap.css")
+    link(rel="shortcut icon", href="images/favicon.ico")
+  body
+    .container
+      .masthead
+        .row
+          h2.muted.span8 Panel of Administration (Articles)
+          br
+          a(href="adminLogout").btn.btn-info.offset2 LoginOut
+        hr
+        a(href="#modal-addArticle", data-toggle="modal").btn.btn-success.span2.offset9
+          i.icon-plus
+      br
+      br
+      table.table.table-bordered.table-striped
+        thead
+          tr
+            th.span1 #
+            th.span7 Title
+            th.span2 Date  
+            th.span2 Score
+        tbody 
+        -for (var i = 0; i < articles.length; i++)
+          tr
+            td #{i+1}
+            td 
+              a(href="#") #{articles[i].title}
+            td #{articles[i].date}
+            td #{articles[i].score}
+              
+  include modals/add_article_mod            
+
+  //- LOAD JS LIBRARIES
+  script(type="text/javascript", src="/javascripts/jquery.js")
+  script(type="text/javascript", src="/javascripts/bootstrap.js")     

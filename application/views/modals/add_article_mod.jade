@@ -1,0 +1,26 @@
+#modal-addArticle.modal-large.hide.fade
+	.modal-header
+		button.close(data-dismiss='modal') x
+		h3 Create a New Article
+	.modal-body
+		form(method="POST", action="/newArticle").form-horizontal
+			.control-group
+				label(for='title').control-label Title
+				.controls
+					input(type="text", placeholder="Title of the article", name="title").input-xxlarge#title
+			.control-group
+				label(for='pre').control-label Intrduction
+				.controls
+					textarea( placeholder="Introduction of the Article", name="pree", rows="3").input-xxlarge#pre
+			.control-group
+				label(for='content').control-label Intrduction
+				.controls
+					textarea(type="text", placeholder="Full Content for Article", name="content", rows="10").input-xxlarge#content
+			.control-group
+				label(for='image').control-label Image
+				.controls
+					input(type="text", placeholder="URL: Imagen", name="image").input-xxlarge#image
+			.controls
+				input(type="submit", value="Save").btn.btn-info.span3
+	.modal-footer
+		button(data-dismiss='modal').btn Close

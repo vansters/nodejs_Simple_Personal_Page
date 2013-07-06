@@ -1,0 +1,59 @@
+body{font-family:'VT323',cursive}
+.separator{height:5px;background-color:#28373c}
+.header{background-color:#ff6160;height:125px}
+.logo{padding-top:50px;}
+.logo span:nth-child(1){font-size:3em;color:#fff}
+.logo span:nth-child(3){padding-top:-70px;border-color:#fff;font-size:1.3em}
+.header nav a{margin-top:65px;background-color:#fff;color:#ff6160}
+.btn-menu{margin-top:65px;background-color:#fff;text-align:center;font-size:1.5em}
+.btn-menu:hover{text-decoration:none;color:#fff;background-color:#ff6160;border-bottom:thick solid #fff;border-width:2px}
+.mainBody{background-color:#f5f5f5;height:auto}
+.terminal{border-radius:8px 8px 0 0;margin-top:50px;background-color:#28373c;height:300px;-moz-box-shadow:0 0 5px #888;-webkit-box-shadow:0 0 5px #888;box-shadow:0 0 5px #888;}
+.terminal span{color:#fffafa;padding-left:10px;font-size:1.2em}
+.terminal-content{margin:5px 0 0 6px;background-color:#d0d7d6;width:98%;height:268px;-moz-box-shadow:inset 0 0 5px #888;-webkit-box-shadow:inset 0 0 5px #888;box-shadow:inner 0 0 5px #888}
+.tabs-menu{padding-top:400px;}
+.tabs-menu div{text-align:center}
+.itemtabActivated{font-size:2em;color:#fff;padding:0 15px 0 5px;background-color:#28373c}
+.itemtab{cursor:pointer;font-size:2em;color:#fff;background-color:#ff6160;padding:0 15px 0 5px}
+.itemtab:hover{background-color:#4b6067}
+.itemtab:active{background-color:#374b51}
+.tab-style-1{background-color:#28373c;color:#fff;padding:20px 0 20px 25px;font-size:1.2em}
+.tab-style-2{background-color:#374b51;color:#fff;padding:20px 0 20px 25px;font-size:1.2em}
+.tab-style-3{background-color:#4b6067;color:#fff;padding:20px 0 20px 25px;font-size:1.2em}
+.tab-style-1 span,.tab-style-2 span,.tab-style-3 span{font-size:1.4em}
+.tab-style-1 td:nth-child(3),.tab-style-2 td:nth-child(3),.tab-style-3 td:nth-child(3){text-align:center}
+tr{height:30px}
+.graph-1{background-color:#f5f5f5;color:#28373c}
+.graph-2{background-color:#ff6160;color:#28373c}
+.graph-3{background-color:#65b9aa;color:#28373c}
+.graph-4{background-color:#fff;color:#28373c}
+.vGraph tr td{text-align:center}
+footer{background-color:#65b9aa;height:100px}
+.message{padding-top:35px;color:#fff;font-size:1.3em}
+.social{padding-top:20px;}
+.social div a img:hover{border-bottom:thick solid #fff;border-top:thick solid #fff;border-width:2px}
+.blog-separator{height:15px;background-color:#28373c;margin-bottom:25px}
+.side-bar{background-color:#f5f5f5;margin-bottom:30px;-moz-box-shadow:0 0 5px #888;-webkit-box-shadow:0 0 5px #888;box-shadow:0 0 5px #888;font-family:"proxima-nova" "Helvetica Neue" Helvetica Arial sans-serif;}
+.side-bar a{text-decoration:none;}
+.side-bar a p{background-color:#28373c;color:#fff;text-align:center;font-size:1em;padding:10px 10px 10px 10px}
+.side-bar a p:hover{background-color:#ff6160}
+.body-article{font-family:"proxima-nova" "Helvetica Neue" Helvetica Arial sans-serif;border-radius:3px 3px 3px 3px;background-color:#f5f5f5;margin-bottom:50px;padding-bottom:50px;-moz-box-shadow:0 0 5px #888;-webkit-box-shadow:0 0 5px #888;box-shadow:0 0 5px #888;}
+.body-article .title{border-radius:3px 3px 0 0;background-color:#ff6160;font-family:'VT323',cursive;padding:15px 25px 15px 25px;color:#28373c;font-size:2.5em}
+.body-article .title:hover{background-color:#28373c;color:#fff}
+.body-article p{text-align:justify;font-size:1.1em;padding:25px 25px 10px 25px}
+.body-article .btn-more{background-color:#ff6160;border-radius:3px 3px 3px 3px;margin-left:25px;padding:5px 5px 5px 5px;}
+.body-article .btn-more a{text-decoration:none;color:#fff;font-size:1.4em;font-family:'VT323',cursive;padding-left:15px;}
+.body-article .btn-more a i{margin:5px 0 0 30px}
+.body-article .btn-youtube{background-color:#cd332d;border-radius:3px 3px 3px 3px}
+.body-article .btn-github{background-color:#4183c4;border-radius:3px 3px 3px 3px}
+.body-article .btn-code{background-color:#00a47a;border-radius:3px 3px 3px 3px}
+.body-article .btn-demo{background-color:#222;border-radius:3px 3px 3px 3px}
+.body-article .btn-more:hover{background-color:#28373c}
+.project{padding-left:30px}
+.project-img{border-radius:3px 3px 3px 3px -moz-box-shadow 0 0 5px #888;-webkit-box-shadow:0 0 5px #888;box-shadow:0 0 5px #888}
+.project-img:nth-child(1){margin:10px}
+.project-content p{font-size:1.2em;padding-top:15px;text-align:justify}
+.project-content .btn-github{background-color:#4183c4;border-radius:3px 3px 3px 3px}
+.project-content .btn-demo{background-color:#222;border-radius:3px 3px 3px 3px}
+.project-title{color:#28373c;font-size:1.8em;margin-top:20px}
+.sep{height:10px;background-color:#28373c}

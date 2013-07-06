@@ -1,0 +1,35 @@
+!!!5
+html
+  head(lang='en')
+    meta(charset='utf-8')
+    title AdminPanel Login
+    meta(name='viewport', content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/stylesheets/bootstrap.css")
+    link(rel="shortcut icon", href="images/favicon.ico")
+  body
+    .container
+      .masthead
+        h2.muted Panel of Administration (Login)
+      br
+      br
+      .well
+        form(method="POST", action="/adminLogin").offset4
+          .control-group
+            label(for='name').control-label UserName
+          .controls
+            input(type="text", placeholder="Enter your user Username", name="username").input-xlarge
+          .control-group
+            label(for="email").control-label Email
+          .controls
+            input(type="text", placeholder="Enter your Email", name="email").input-xlarge
+          .control-group
+            label(for="twitter").control-label Twitter
+          .controls
+            input(type="text", placeholder="Enter your Twitter", name="twitter").input-xlarge
+          .control-group
+            label(for="twitter").control-label Password
+          .controls
+            input(type="password", placeholder="Enter your PassWork", name="password").input-xlarge
+          .controls
+            input(type="submit", value="Login").btn.btn-info.span4
+

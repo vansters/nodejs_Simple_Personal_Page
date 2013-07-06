@@ -1,0 +1,247 @@
+//-   Autor: Mario Andrade (@TheVanters in Twitter) 
+//-   DataInit: 21/05/13 DataEnd: 
+//-   Repository: https://github.com/vansters/VantersWebSite
+
+//- DATA ARRAYS FOR TEMPLEATE
+//- Technologies FRONTEND
+- var techF =   [ {name: 'HTML 5',desc: '', level:'4'} ]
+-     techF.push( {name: 'CSS 3',desc: '', level:'4'} )
+-     techF.push( {name: 'JavaScript',desc: 'Orientado a objetos.', level:'4'} )
+-     techF.push( {name: 'Jquery.js',desc: 'Librería de utilidades para JavaScript.', level:'4'} )
+-     techF.push( {name: 'Backbone.js',desc: 'Framework para aplicar MVC a las aplicaciones Js.', level:'2'} )
+-     techF.push( {name: 'Twitter Bootstrap',desc: 'Framework de protipado y maquetación Web.', level:'5'} )
+-     techF.push( {name: 'Fundation',desc: 'Framework para aplicar MVC a las aplicaciones Js.', level:'3'} )
+-     techF.push( {name: 'Stylus',desc: 'Proprocesador para CSS.', level:'4'} )
+-     techF.push( {name: 'Jade',desc: 'Proprocesador para HMTL.', level:'4'} )
+//- Technologies BACKEND
+- var techB =   [ {name: 'PHP 5',desc: 'Orientado a objetos y con arquitectura MVC.', level:'4'} ]
+-     techB.push( {name: 'Laravel',desc: 'Framework PHP OO con arquitectura MVC.', level:'4'} )
+-     techB.push( {name: 'Java',desc: 'J2SE/J2ME/J2EE (JSP/Servlets/Sockets & RMI).', level:'3'} )
+-     techB.push( {name: 'Node.js',desc: 'Servidor de eventos JavaScript.', level:'3'} )
+-     techB.push( {name: 'Express.js',desc: 'Framework MVC para Node.js.', level:'3'} )
+-     techB.push( {name: 'MongoDB/Mongoose',desc: 'BD NoSQl orientada a documentos.', level:'3'} )
+//- Technologies MOBILE
+- var techM =   [ {name: 'Android',desc: 'Desarrollo de aplicaciones moviles.', level:'3'} ]
+-     techM.push( {name: 'J2ME',desc: 'Desarollo de aplicaciones moviles con Java.', level:'4'} )
+-     techM.push( {name: 'PhoneGap',desc: 'Aplicaciones multiplataforma basadas en HTML/CSS/JS.', level:'2'} )
+-     techM.push( {name: 'Lungo',desc: 'Aplicaciones moviles basadas en HTML/CSS/JS.', level:'2'} )
+-     techM.push( {name: 'JQuery Mobile',desc: 'Aplicaciones moviles basadas en HTML/CSS/JS.', level:'2'} )
+
+//- Tools SO
+- var toolSO =   [ {name: 'Ubuntu',level: 4,color: 'Blue'} ]
+-     toolSO.push( {name: 'Xubuntu',level: 5,color: 'Pink'} )
+-     toolSO.push( {name: 'OpenSUSE',level: 2,color: 'Blue'} )
+-     toolSO.push( {name: 'Windows',level: 4,color: 'Pink'} )
+//- Tools IDE
+- var toolIDE =  [ {name: 'NetBeans',level: 4,color: 'Blue'} ]
+-     toolIDE.push( {name: 'SublimeText',level: 5,color: 'Pink'} )
+-     toolIDE.push( {name: 'Eclipse',level: 4,color: 'Blue'} )
+//- Tools Server
+- var toolS =    [ {name: 'Apache',level: 3,color: 'Pink'} ]
+-     toolS.push( {name: 'Apache Tomcat',level: 2,color: 'Blue'} )
+-     toolS.push( {name: 'Nginex',level: 1,color: 'Pink'} )
+-     toolS.push( {name: 'NodeJs',level: 3,color: 'Blue'} )
+//- Tools PM
+- var toolPM =   [ {name: 'Photosho',level: 2,color: 'Pink'} ]
+-     toolPM.push( {name: 'Illustrator',level: 2,color: 'Blue'} )
+-     toolPM.push( {name: 'Scene Builder',level: 3,color: 'Pink'} )
+//- Tools Doc
+- var toolDOC =   [ {name: 'Visual Paradigm',level: 3,color: 'Blue'} ]
+-     toolDOC.push( {name: 'Latex',level: 3,color: 'Pink'} )
+-     toolDOC.push( {name: 'Git/GitHub',level: 2,color: 'Blue'} )
+-     toolDOC.push( {name: 'UML',level: 3,color: 'Pink'} )
+//- Tool E
+- var toolE =   [ {name: 'Técnico',level: 2,color: 'Blue'} ] 
+-     toolE.push( {name: 'Casual',level: 2,color: 'Pink'} )
+//- Tool EXT
+- var toolEXT =   [ {name: 'Maps Android API',level: 1,color: 'Blue'} ]
+-     toolEXT.push( {name: 'Twitter API',level: 1,color: 'Pink'} )
+-     toolEXT.push( {name: 'Facebook API',level: 1,color: 'Blue'} )
+
+
+//- Graph Bar Style Counter
+- var count = 1
+
+//- MIXINs FOR TEMPLATE
+//- Table Technologies Data -----------------------------------------------------------------------
+mixin  tableTechnologies(name,desc,level,count)
+  tr 
+    td.span2 #{name}
+    td.span5 #{desc}
+    td.span5 
+      case level
+        when '1': <div class="span#{lavel} graph-#{count}">Básico</div> 
+        when '2': <div class="span#{level} graph-#{count}">Básico - Intermedio</div> 
+        when '3': <div class="span#{level} graph-#{count}">Intermedio</div> 
+        when '4': <div class="span#{level} graph-#{count}">Intermedio - Avanzado</div>
+        when '5': <div class="span#{level} graph-#{count}">Avanzado</div>
+//- -----------------------------------------------------------------------------------------------
+//- Table Verticla Tools
+mixin tableTools(name, dataObject,colspan)
+  tr
+    td(colspan='#{colspan}') #{name}
+  tr
+    td(colspan='#{colspan}')
+  - for (var i = 5; i > 0; --i)
+    tr
+      each tool, index in dataObject
+        if tool.level >= i
+          td
+            if tool.color == 'Blue'
+              img(src="images/blue_star_2.png", alt="")
+            else
+              img(src="images/ping_star_1.png", alt="")
+        else
+          td
+  tr
+    each tool, index in dataObject
+      td.span1 #{tool.name}
+//- -----------------------------------------------------------------------------------------------              
+
+!!!5
+html
+  head(lang='en')
+    meta(charset='utf-8')
+    title Mario | Andrade
+    meta(name='viewport')
+    //- LOAD CSS
+    link(rel="stylesheet", href="/stylesheets/bootstrap.css")
+    link(rel="stylesheet", href="/stylesheets/index_page.css")
+    //- LOAD TYPOGRAPHY
+    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=VT323")
+    //- LOAD FAVICON
+    link(rel="shortcut icon", href="images/favicon.ico")
+  body
+    .container
+      //- SEPARATOR
+      header.row.separator
+      //- LOGO & TOP-MENU
+      section.row.header
+        .logo.span5
+          span Mario Andrade
+          br
+          span &nbsp;{ Freelance Web & Mobile Dev }
+        nav
+          a(href="/").span2.offset1.btn-menu Inicio
+          a(href="/portafolio").span2.btn-menu Portafolio
+          a(href="#").span2.btn-menu Contáctame
+      //- MAIN CONTENT
+      section.row.mainBody
+        //- ABOUT-ME TERMINAL
+        .row.span8.offset2.terminal
+          span Vansters | Terminal
+          i.icon-minus-sign.icon-white.offset5
+          i.icon-plus-sign.icon-white
+          i.icon-remove-sign.icon-white
+          .terminal-content
+
+        //- TABS-MENU
+        nav.row.tabs-menu
+          .span4
+            span.itemtabActivated#btn-tech Tecnologías
+          .span4
+            span.itemtab#btn-tool Herramientas
+          .span4
+            span.itemtab#btn-more Algo más
+        //- TAB TECHNOLOGIES
+        .tab#tab-tech
+          //- FRONTEND
+          .tab-style-1
+            br
+            table
+              each tech, index in techF
+                if count  <= 4
+                  +tableTechnologies(tech.name,tech.desc,tech.level,count)
+                  - count++
+                else
+                  - count = 1
+                  +tableTechnologies(tech.name,tech.desc,tech.level,count)
+          //- BACKEND
+          .tab-style-2
+            br
+            table
+              each tech, index in techB
+                if count  <= 4
+                  +tableTechnologies(tech.name,tech.desc,tech.level,count)
+                  - count++
+                else
+                  - count = 1
+                  +tableTechnologies(tech.name,tech.desc,tech.level,count)
+          //- MOBILE
+          .tab-style-3
+            br
+            table
+              each tech, index in techM
+                if count  <= 4
+                  +tableTechnologies(tech.name,tech.desc,tech.level,count)
+                  - count++
+                else
+                  - count = 1
+                  +tableTechnologies(tech.name,tech.desc,tech.level,count)
+        //- TAB TOOLS
+        .tab.hide#tab-tool
+          .tab-style-1
+            .row
+              table.span4.offset1.vGraph
+                +tableTools('{ Sistemas Operativos }',toolSO,5)
+              table.span4.offset2.vGraph
+                +tableTools('{ Editores & IDEs }',toolIDE,3)  
+          .tab-style-2
+            .row
+              table.span4.offset1.vGraph
+                +tableTools('{ Servidores }',toolS,4)
+              table.span4.offset2.vGraph
+                +tableTools('{ Prototipación y Maquetado }',toolPM,3) 
+          .tab-style-3 
+            .row
+              table.span4.offset1.vGraph
+                +tableTools('{ Documentación }',toolDOC,4)
+              table.span2.vGraph
+                +tableTools('{ Idioma Ingles }',toolE,2)
+              table.span4.vGraph
+                +tableTools('{ Otras Herramientas }',toolEXT,3)   
+        //- TAB SOMETHING MORE
+        .tab.hide#tab-more
+          .tab-style-1
+            span.offset4 Proceso de Desarrollo
+            <canvas id="devProcess" width="900" height="350">
+          .tab-style-2
+            span.offset4 Equipo de Trabajo
+            br
+            br
+            .icons.offset1
+              img(src="images/ipod.png", alt="")
+              img(src="images/laptop.png", alt="") 
+              img(src="images/screen.png", alt="")
+              img(src="images/phone.png", alt="")
+              img(src="images/coffee.png", alt="")
+          .tab-style-3
+              span.offset4 Entorno de Desarrollo
+              br
+              br
+              .icons.offset1
+                img(src="images/terminal.png", alt="")
+                img(src="images/ST2.png", alt="") 
+                img(src="images/browser.png", alt="")
+              span.offset1 Terminal
+              span.offset2 Sublime Text 2
+              span.offset2 Google Chrome
+      //- FOOTER
+      footer.row
+        .message.span7 " Has de tu trabajo el más divertido, para que nunca tengas que trabajar "
+        //- SOCIAL INFO
+        .social
+          .div.span1.offset1
+            a(href="#") 
+              img(src="images/twitter-64.png", alt="")
+          .div.span1
+            a(href="#") 
+              img(src="images/youtube-64.png", alt="")
+          .div.span1
+            a(href="#") 
+              img(src="images/github-64.png", alt="")
+
+  //- LOAD JS LIBRARIES
+  script(type="text/javascript", src="/javascripts/jquery.js")
+  //- LOAD JS Controller
+  script(type="text/javascript", src="/javascripts/index_page.js")

@@ -1,0 +1,96 @@
+!!!5
+html
+  head(lang='en')
+    meta(charset='utf-8')
+    title Vansters | Portafolio
+    meta(name='viewport')
+    //- LOAD CSS
+    link(rel="stylesheet", href="/stylesheets/bootstrap.css")
+    link(rel="stylesheet", href="/stylesheets/index_page.css")
+    //- LOAD TYPOGRAPHY
+    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=VT323")
+    //- LOAD FAVICON
+    link(rel="shortcut icon", href="images/favicon.ico")
+  body
+    .container
+      //- SEPARATOR
+      header.row.separator
+      //- LOGO & TOP-MENU
+      section.row.header
+        .logo.span5
+          span Mario Andrade
+          br
+          span &nbsp;{ Freelance Web & Mobile Dev }
+        nav
+          a(href="/").span2.offset1.btn-menu Inicio
+          a(href="/portafolio").span2.btn-menu Portafolio
+          a(href="#").span2.btn-menu Contactame
+      //- MAIN CONTENT
+      section.row.mainBody
+        .project.row
+          .span3.project-img
+            img(src="images/bar-example.png", alt="")
+          .span8.project-content
+            .project-title Web Personal Mario Andrade  
+            p Sitio web  y blog personal. Tecnologías utilizadas BackEnd :: NodeJs + Express
+              | + MongoDB, FrontEnd :: (HTML5 + Jade) + (CSS3 + Stylus) + (JavaScript + JQuery)
+              | + Bootstrap.   
+            .row
+              .project-date.span2
+                <strong>Fecha :: </strong> Junio/2013
+              .project-type.span4
+                <strong>Tipo de Proyecto :: </strong> Proyecto Personal
+              .btn-github.span1.offset6
+                a(href="#")
+                  img(src="images/github-32.png", alt="")
+                  i.icon-ok.icon-white
+              .btn-demo.span1
+                a(href="#")
+                  img(src="images/trakt-32.png", alt="")
+                  i.icon-ok.icon-white
+        .sep
+        .project.row
+          .span3.project-img
+            img(src="images/bar-example.png", alt="")
+          .span8.project-content
+            .project-title Galletitas SA de CV 
+            p Sistema que apoya la gestión del proceso de fabricación de galletas.
+              | El sistema contempla el catalogo de proveedores, materia prima, clientes y también
+              | proporciona reportes para el área de ventas, compras y producción.
+              | Tecnologías utilizadas BackEnd = (PHP5 + Laravel) + MySQL, FrontEnd :: HTML5 +
+              | CSS3 + (JavaScript + JQuery) + Bootstrap.  
+            .row
+              .project-date.span3
+                <strong>Fecha :: </strong> Febrero/2013 - Mayo/2013
+              .project-type.span3
+                <strong>Tipo de Proyecto :: </strong> Proyecto Escolar
+              br
+              br
+              .btn-github.span1.offset6
+                a(href="#")
+                  img(src="images/github-32.png", alt="")
+                  i.icon-ok.icon-white
+              .btn-demo.span1
+                a(href="#")
+                  img(src="images/trakt-32.png", alt="")
+                  i.icon-ok.icon-white
+        .sep
+      //- FOOTER
+      footer.row
+        .message.span7 "Has que tu trabajo sea el mas divertido, para que jamas tengas que trabajar"
+        //- SOCIAL INFO
+        .socia
+          .div.span1.offset1
+            a(href="#") 
+              img(src="images/twitter-64.png", alt="")
+          .div.span1
+            a(href="#") 
+              img(src="images/youtube-64.png", alt="")
+          .div.span1
+            a(href="#") 
+              img(src="images/github-64.png", alt="")
+
+  //- LOAD JS LIBRARIES
+  script(type="text/javascript", src="/javascripts/jquery.js")
+  //- LOAD JS Controller
+  script(type="text/javascript", src="/javascripts/index_page.js")

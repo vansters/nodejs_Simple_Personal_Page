@@ -1,0 +1,261 @@
+// Autor: Mario Andrade (@TheVanters in Twitter) 
+// Date: June 2013
+// Repository: https://github.com/vansters/VantersWebSite
+// Compile With: stylus -c index_page.styl
+
+// -- Global Font-Family
+gFont = 'VT323', cursive
+// -- Global Color-Palette
+gWrite = #FFFFFF
+gDarkGrey = #28373C
+gPink = #FF6160
+gSnow = #F5F5F5
+gLightGrey = #D0D7D6
+gAcuaGreen = #65B9AA
+gSEP1 = #28373C
+gSEP2 = #374B51
+gSEP3 = #4B6067
+
+// Main Body Container
+body
+	font-family gFont
+
+// Separator
+.separator
+	height 5px
+	background-color gDarkGrey
+
+// Logo & Top-Menu
+.header
+	background-color gPink
+	height 125px
+.logo
+	padding-top 50px
+	span:nth-child(1)
+		font-size 3em
+		color gWrite
+	span:nth-child(3)
+		padding-top -70px
+		border-color gWrite
+		font-size 1.3em
+.header nav a 
+	margin-top 65px
+	background-color gWrite
+	color gPink
+.btn-menu
+	margin-top 65px
+	background-color gWrite
+	text-align center
+	font-size 1.5em
+.btn-menu:hover
+	text-decoration none
+	color gWrite
+	background-color gPink
+	border-bottom thick solid gWrite
+	border-width 2px
+// About Me Terminal
+.mainBody
+	background-color gSnow
+	height auto
+.terminal
+	border-radius 8px 8px 0 0
+	margin-top 50px
+	background-color gDarkGrey
+	height 300px
+	-moz-box-shadow 0 0 5px #888
+	-webkit-box-shadow 0 0 5px #888
+	box-shadow 0 0 5px #888
+	span
+		color #fffafa
+		padding-left 10px
+		font-size 1.2em
+.terminal-content
+	margin 5px 0 0 6px
+	background-color gLightGrey
+	width 98%
+	height 268px
+	-moz-box-shadow inset 0 0 5px #888
+	-webkit-box-shadow inset 0 0 5px #888
+	box-shadow inner 0 0 5px #888;
+
+// Tabs Menu
+.tabs-menu
+	padding-top 400px
+	div
+		text-align center
+.itemtabActivated
+	font-size 2em
+	color gWrite
+	padding 0px 15px 0px 5px
+	background-color gDarkGrey
+.itemtab
+	cursor pointer
+	font-size 2em
+	color gWrite
+	background-color gPink
+	padding 0px 15px 0px 5px
+.itemtab:hover
+	background-color gSEP3
+.itemtab:active
+	background-color gSEP2
+
+// Tabs Content 
+.tab-style-1
+	background-color gSEP1
+	color gWrite
+	padding 20px 0px  20px 25px
+	font-size 1.2em
+.tab-style-2
+	background-color gSEP2
+	color gWrite
+	padding 20px 0px  20px 25px
+	font-size 1.2em
+.tab-style-3
+	background-color gSEP3
+	color gWrite
+	padding 20px 0px  20px 25px
+	font-size 1.2em
+.tab-style-1 span
+.tab-style-2 span
+.tab-style-3 span
+	font-size 1.4em
+.tab-style-1 td:nth-child(3)
+.tab-style-2 td:nth-child(3)
+.tab-style-3 td:nth-child(3)
+	text-align center
+// Bar Graphics
+tr
+	height 30px
+.graph-1
+	background-color gSnow
+	color gDarkGrey
+.graph-2
+	background-color gPink
+	color gDarkGrey
+.graph-3
+	background-color gAcuaGreen
+	color gDarkGrey
+.graph-4
+	background-color gWrite
+	color gDarkGrey
+.vGraph tr td
+	text-align center
+
+// Footer
+footer
+	background-color #65B9AA
+	height 100px
+.message
+	padding-top 35px
+	color gWrite
+	font-size 1.3em
+.social
+	padding-top 20px
+	div a img:hover
+		border-bottom thick solid gWrite
+		border-top thick solid gWrite
+		border-width  2px
+
+// Style For Blog ---------------------->
+.blog-separator
+	height 15px
+	background-color gDarkGrey
+	margin-bottom 25px
+// 
+.side-bar
+	background-color gSnow 
+	margin-bottom 30px
+	-moz-box-shadow 0 0 5px #888
+	-webkit-box-shadow 0 0 5px #888
+	box-shadow 0 0 5px #888
+	font-family "proxima-nova" "Helvetica Neue" Helvetica Arial sans-serif
+	a
+		text-decoration none
+		p
+			background-color gDarkGrey
+			color gWrite
+			text-align center
+			font-size 1em
+			padding 10px 10px 10px 10px
+		p:hover
+			background-color gPink
+// 
+.body-article
+	font-family "proxima-nova" "Helvetica Neue" Helvetica Arial sans-serif
+	border-radius 3px 3px 3px 3px
+	background-color gSnow 
+	margin-bottom 50px
+	padding-bottom 50px
+	-moz-box-shadow 0 0 5px #888
+	-webkit-box-shadow 0 0 5px #888
+	box-shadow 0 0 5px #888
+	.title 
+		border-radius 3px 3px 0px 0px
+		background-color gPink
+		font-family gFont
+		padding 15px 25px 15px 25px
+		color gDarkGrey
+		font-size 2.5em
+	.title:hover
+		background-color gDarkGrey
+		color gWrite
+	p
+		text-align justify
+		font-size 1.1em
+		padding 25px 25px 10px 25px
+	.btn-more
+		background-color gPink
+		border-radius 3px 3px 3px 3px
+		margin-left 25px
+		padding 5px 5px 5px 5px
+		a
+			text-decoration none
+			color gWrite
+			font-size 1.4em
+			font-family gFont
+			padding-left 15px
+			i
+				margin 5px 0px 0px 30px
+	.btn-youtube
+		background-color #CD332D
+		border-radius 3px 3px 3px 3px
+	.btn-github
+		background-color #4183C4
+		border-radius 3px 3px 3px 3px
+	.btn-code
+		background-color #00A47A
+		border-radius 3px 3px 3px 3px
+	.btn-demo
+		background-color #222222
+		border-radius 3px 3px 3px 3px
+	.btn-more:hover
+		background-color gDarkGrey
+
+// Style For Portfolio ---------------------->
+.project
+	padding-left 30px
+.project-img
+	border-radius 3px 3px 3px 3px\
+	-moz-box-shadow 0 0 5px #888
+	-webkit-box-shadow 0 0 5px #888
+	box-shadow 0 0 5px #888
+.project-img:nth-child(1)
+	margin 10px
+.project-content
+	p
+		font-size 1.2em
+		padding-top 15px
+		text-align justify
+	.btn-github
+		background-color #4183C4
+		border-radius 3px 3px 3px 3px
+	.btn-demo
+		background-color #222222
+		border-radius 3px 3px 3px 3px
+.project-title
+	color gDarkGrey
+	font-size 1.8em
+	margin-top 20px
+.sep
+	height 10px
+	background-color gDarkGrey

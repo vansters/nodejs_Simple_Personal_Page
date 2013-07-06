@@ -1,0 +1,46 @@
+!!!5
+html
+	head(lang='en')
+		meta(charset='utf-8')
+		title Vansters | Blog
+		meta(name='viewport')
+		link(rel="stylesheet", href="/stylesheets/bootstrap.css")
+		link(rel="stylesheet", href="/stylesheets/index_page.css")
+		link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=VT323")
+		link(rel="shortcut icon", href="images/favicon.ico")
+	body
+		.container
+			header.row.blog-separator
+			.container
+				.row
+					.span3
+						-for( var i = 0; i < 3; i++)
+							.side-bar
+								img(src="images/bar-example.png", alt="")
+								a(href="#") 
+									p Donec id elit non mi porta gravida at eget metus condimentum
+					.span9
+						- for ( var i = 0; i < 5; i++)
+							.body-article
+								.title
+									| # Content is like water  
+								img(src="images/article-example.png", alt="")
+								p Donec id elit non mi porta gravida at eget metus.condimentum
+									| Fusce dapibus, tellus ac cursus commodo, tortor mauris 
+									| nibh, ut fermentum massa justo sit amet risus. Etiam porta 
+									|sem malesuada magna mollis euismod. Donec sed odio dui.
+								.btn-more.span2
+									a(href="#") Read more
+										i.icon-arrow-right.icon-white
+								.btn-youtube.span1.offset2
+									img(src="images/youtube-32.png", alt="")
+									i.icon-ok.icon-white
+								.btn-github.span1
+									img(src="images/github-32.png", alt="")
+									i.icon-ok.icon-white
+								.btn-code.span1
+									img(src="images/codeschool-32.png", alt="")
+									i.icon-ok.icon-white
+								.btn-demo.span1
+									img(src="images/trakt-32.png", alt="")
+									i.icon-ok.icon-white
