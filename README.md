@@ -24,8 +24,8 @@ This is a simple project for develop a personal page and blog. The finality this
 ## <a name='run'>Running</a>
 **With nodeJs and MongoDB Server**
 
-	+ ' **1. Run** npm install'
-	+ ' **2. Change default values in** /application/config/config_db.js
+	+ '**1. Run** npm install'
+	+ '**2. Change default values in** /application/config/config_db.js'
 	
 
 ## <a name='tips'>Tips</a>
