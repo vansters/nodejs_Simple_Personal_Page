@@ -25,10 +25,10 @@ This is a simple project for develop a personal page and blog. The finality this
 **With nodeJs and MongoDB Server**
 	
 	1. Run 
-	'''shell
+	```shell
 	npm install
 	2. Change default values in
-	'''
+	```
 	/application/config/config_db.js'
 	
 
